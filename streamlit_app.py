@@ -158,3 +158,15 @@ if st.button("Hitung Intrgral"):
         # Bandingkan dengan integral eksak
         integral_exact = sp.integrate(f, (x, a, b))
         st.info(f"Nilai integral eksak: {float(integral_exact):.6f}")
+        
+        # Visualisasi pias
+        fig, ax = plt.subplots()
+        X = np.linspace(a, b, 200)
+        ax.plot(X, f_num(X), 'b', label='f(x)')
+        for xi in xs:
+            ax.bar(xi, f_num(xi), width=h, alpha=0.3, align='edge')
+        ax.legend()
+        st.pyplot(fig)
+
+    except Exception as e:
+        st.error(f"Terjadi kesalahan: {e}")
