@@ -15,6 +15,12 @@ st.markdown("""
         color: white;
         margin-top: 30px;
     }
+    .garis {
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, #888, #ccc, #888);
+        margin: 20px auto;
+        width: 60%;
 
     .deskripsi {
         animation: fadeIn 3s ease-out;
