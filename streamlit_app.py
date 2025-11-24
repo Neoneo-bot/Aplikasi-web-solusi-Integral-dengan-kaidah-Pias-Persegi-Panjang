@@ -135,6 +135,7 @@ tipe_pias = st.radio(
 # Tombol hitung
 if st.button("Hitung Intrgral"):
     try:
+        #buat falidasi kode
         if a > b:
             a, b = b, a
 
@@ -156,11 +157,11 @@ if st.button("Hitung Intrgral"):
             
         # Hitung integral aproksimasi
         integral_est = np.sum(f_num(xs) * h)
-        st.success(f"Hasil estimasi integral: {integral_est:.2f}")
+        st.success(f"Hasil estimasi integral: {integral_est:.0f}")
 
         # Bandingkan dengan integral eksak
         integral_exact = sp.integrate(f, (x, a, b))
-        st.info(f"Nilai integral eksak: {float(integral_exact):.2f}")
+        st.info(f"Nilai integral eksak: {float(integral_exact):.0f}")
         
         # Visualisasi pias
         fig, ax = plt.subplots()
