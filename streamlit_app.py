@@ -79,7 +79,7 @@ st.markdown("""
         margin-bottom: 10px;
         animation: fadeInUp 6s ease-out;
     }
-    .btn-hitung {
+    .stButton > button {
         display: inline-block;
         padding: 12px 24px;
         font-size: 16px;
@@ -94,7 +94,7 @@ st.markdown("""
         animation: fadeInUp 2.6s ease-out;
     }
 
-    .btn-hitung:hover {
+    .stButton > button:hover {
         background-color: #218838;
         transform: scale(1.05);
         animation: pulse 1s infinite;
