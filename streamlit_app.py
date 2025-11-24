@@ -115,7 +115,7 @@ fungsi_input = st.text_input("", placeholder="Masukkan fungsi di sini...")
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("<div class='label-param'>Batas Bawah (a)</div>", unsafe_allow_html=True)
-    a = st.number_input("", key="bawah", format="%.4f, value=0.0)
+    a = st.number_input("", key="bawah", format="%.4f", value=0.0)
 with col2:
     st.markdown("<div class='label-param'>Batas Atas (b)</div>", unsafe_allow_html=True)
     b = st.number_input("", key="atas", value=1.0)
