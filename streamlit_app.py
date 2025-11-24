@@ -148,5 +148,13 @@ if st.button("Hitung Intrgral"):
             xs = np.linspace(a, b - h, n)
         elif tipe_pias == "Right Rectangle":
             xs = np.linspace(a + h, b, n)
-        else:  # Midpoint
+        else:  #midpoin
             xs = np.linspace(a + h/2, b - h/2, n)
+            
+        # Hitung integral aproksimasi
+        integral_est = np.sum(f_num(xs) * h)
+        st.success(f"Hasil estimasi integral: {integral_est:.6f}")
+
+        # Bandingkan dengan integral eksak
+        integral_exact = sp.integrate(f, (x, a, b))
+        st.info(f"Nilai integral eksak: {float(integral_exact):.6f}")
