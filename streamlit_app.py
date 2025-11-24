@@ -69,6 +69,7 @@ st.markdown("""
     }
     .btn-hitung {
         display: inline-block;
+        text-align: right;
         padding: 12px 24px;
         font-size: 16px;
         font-weight: bold;
