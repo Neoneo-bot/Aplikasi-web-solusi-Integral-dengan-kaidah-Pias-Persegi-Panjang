@@ -35,18 +35,18 @@ st.markdown("""
         margin-top: 10px;
     }
     .label-fungsi {
+        animation: fadeInUp 4s ease-out;
         font-size: 20px;
         font-weight: bold;
         margin-top: 40px;
         margin-bottom: 5px;
         color: #ffffff;
-        animation: fadeInUp 4s ease-out;
     }
     .contoh-fungsi {
+        animation: fadeInUp 4s ease-out;
         font-size: 14px;
         color: #cccccc;
         margin-bottom: 10px;
-        animation: fadeInUp 4s ease-out;
     }
     .stTextInput > div > input {
         height: 45px;
