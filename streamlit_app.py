@@ -6,6 +6,11 @@ st.markdown("""
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
     }
+     @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
 
     .judul {
         animation: fadeIn 1.5s ease-out;
@@ -35,17 +40,21 @@ st.markdown("""
         margin-top: 40px;
         margin-bottom: 5px;
         color: #ffffff;
+        animation: fadeInUp 1.2s ease-out;
     }
     .contoh-fungsi {
         font-size: 14px;
         color: #cccccc;
         margin-bottom: 10px;
+        animation: fadeInUp 1.5s ease-out;
     }
     .stTextInput > div > input {
         height: 45px;
         font-size: 16px;
         border-radius: 8px;
         padding-left: 10px;
+        transition: box-shadow 0.3s ease;
+        animation: fadeInUp 1.8s ease-out;
     }
     .label-param {
         font-size: 16px;
