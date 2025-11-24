@@ -53,11 +53,7 @@ st.markdown("""
         font-size: 16px;
         border-radius: 8px;
         padding-left: 10px;
-        transition: box-shadow 0.3s ease;
         animation: fadeInUp 5s ease-out;
-    }
-     .stTextInput > div > input:focus {
-        box-shadow: 0 0 10px #00c4ff;
     }
     .label-param {
         font-size: 16px;
