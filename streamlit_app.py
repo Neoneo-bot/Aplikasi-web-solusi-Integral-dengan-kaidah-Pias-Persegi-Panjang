@@ -67,6 +67,23 @@ st.markdown("""
         margin-top: 30px;
         margin-bottom: 10px;
     }
+    .btn-hitung {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #28a745;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 30px;
+    }
+
+    .btn-hitung:hover {
+        background-color: #218838;
+    }
     </style>
 
     <div class="judul">Aplikasi Web Solusi Integral Dengan Kaidah Pias Persegi Panjang</div>
@@ -92,10 +109,17 @@ with col3:
     n = st.number_input("", min_value=1, step=1, key="pias")
    
     st.markdown("<div class='nb-fungsi'>NB: 1,00 = 1</div>", unsafe_allow_html=True)
+    
 # Pilihan tipe pias
 st.markdown("<div class='label-pias'>Pilih Tipe Pias:</div>", unsafe_allow_html=True)
 tipe_pias = st.radio(
     "",
     options=["Left Rectangle", "Right Rectangle", "Midpoint"],
     horizontal=True
+)
+
+# Tombol dengan HTML
+hitung = st.markdown(
+    "<button class='btn-hitung'>Hitung Integral</button>",
+    unsafe_allow_html=True
 )
