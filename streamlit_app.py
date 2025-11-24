@@ -29,27 +29,25 @@ st.markdown("""
         color: ;
         margin-top: 10px;
     }
-        .label-fungsi {
+    .label-fungsi {
         font-size: 20px;
         font-weight: bold;
         margin-top: 40px;
         margin-bottom: 5px;
         color: #ffffff;
     }
-
     .contoh-fungsi {
         font-size: 14px;
         color: #cccccc;
         margin-bottom: 10px;
     }
-
     .stTextInput > div > input {
         height: 45px;
         font-size: 16px;
         border-radius: 8px;
         padding-left: 10px;
     }
-        .label-param {
+    .label-param {
         font-size: 16px;
         font-weight: bold;
         color: #ffffff;
