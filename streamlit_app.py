@@ -58,6 +58,12 @@ st.markdown("""
         padding-left: 10px;
         animation: fadeInUp 5s ease-out;
     }
+     .nb-fungsi {
+        animation: fadeInUp 4s ease-out;
+        font-size: 14px;
+        color: #cccccc;
+        margin-bottom: 10px;
+    }
     .label-param {
         font-size: 16px;
         font-weight: bold;
@@ -104,6 +110,7 @@ st.markdown("""
 st.markdown("<div class='label-fungsi'>FUNGSI f(x)</div>", unsafe_allow_html=True)
 st.markdown("<div class='contoh-fungsi'>contoh: x^2 + 3x + 1</div>", unsafe_allow_html=True)
 fungsi_input = st.text_input("", placeholder="Masukkan fungsi di sini...")
+st.markdown("<div class='nb-fungsi'>NB : * = KALI atau x</div>", unsafe_allow_html=True)
 
 # Input parameter integral
 col1, col2, col3 = st.columns(3)
