@@ -71,6 +71,12 @@ st.markdown("""
         margin-bottom: 5px;
         animation: fadeInUp 5s ease-out;
     }
+    .nb-param {
+        animation: fadeInUp 4s ease-out;
+        font-size: 14px;
+        color: #cccccc;
+        margin-bottom: 10px;
+    }
     .label-pias {
         font-size: 18px;
         font-weight: bold;
@@ -120,6 +126,7 @@ with col1:
 with col2:
     st.markdown("<div class='label-param'>Batas Atas (b)</div>", unsafe_allow_html=True)
     b = st.number_input("", key="atas", format="%.2f", value=1.0)
+    st.markdown("<div class='nb-fungsi'>NB : 1 = 1,00</div>", unsafe_allow_html=True)
 with col3:
     st.markdown("<div class='label-param'>Jumlah Pias (n)</div>", unsafe_allow_html=True)
     n = st.number_input("", min_value=1, step=1, key="pias", value=10)
